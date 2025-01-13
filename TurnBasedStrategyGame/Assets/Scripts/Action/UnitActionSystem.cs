@@ -9,7 +9,7 @@ public class UnitActionSystem : MonoBehaviour
 
     public event EventHandler OnSelectedUnitChanged;
     public event EventHandler OnSelectedActionChanged;
-    public event EventHandler<bool> OnBuzyChanged;
+    public event EventHandler<bool> OnBusyChanged;
     public event EventHandler OnActionStarted;
 
 
@@ -36,6 +36,10 @@ public class UnitActionSystem : MonoBehaviour
     private void Update() {
 
         if (isBusy) return;
+
+        if(!TurnSystem.Instance.IsPlayerTurn()) {
+            return;
+        }
 
         if (EventSystem.current.IsPointerOverGameObject()) return;
 
@@ -68,13 +72,13 @@ public class UnitActionSystem : MonoBehaviour
     private void SetBusy() {
         isBusy = true;
 
-        OnBuzyChanged?.Invoke(this, isBusy);
+        OnBusyChanged?.Invoke(this, isBusy);
     }
 
     private void ClearBusy() {
         isBusy = false;
 
-        OnBuzyChanged?.Invoke(this, isBusy);
+        OnBusyChanged?.Invoke(this, isBusy);
     }
 
     private bool TryHandleUnitSelection() {
@@ -85,6 +89,12 @@ public class UnitActionSystem : MonoBehaviour
                     if(unit == selectedUnit) {
                         return false;
                     }
+
+                    if (unit.IsEnemy()) {
+                        // Clicked on an Enemy
+                        return false;
+                    }
+
                     SetSelectedUnit(unit);
                     return true;
                 }

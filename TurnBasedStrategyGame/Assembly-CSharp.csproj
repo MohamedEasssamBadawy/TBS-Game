@@ -61,6 +61,7 @@
     <Analyzer Include="D:\Unity\6000.0.31f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.UIToolkit.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\UI\EnemyAI.cs" />
     <Compile Include="Assets\Scripts\Unit.cs" />
     <Compile Include="Assets\Scripts\UnitSelectedVisual.cs" />
     <Compile Include="Assets\Scripts\UI\ActionButtonUI.cs" />

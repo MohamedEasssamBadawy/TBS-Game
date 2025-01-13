@@ -4,7 +4,7 @@ public class ActionBuzyUI : MonoBehaviour
 {
 
     private void Start() {
-        UnitActionSystem.Instance.OnBuzyChanged += UnitActionSytem_OnBuzyChanged;
+        UnitActionSystem.Instance.OnBusyChanged += UnitActionSytem_OnBuzyChanged;
 
         Hide();
     }
