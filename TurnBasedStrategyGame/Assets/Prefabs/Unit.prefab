@@ -46,6 +46,8 @@ GameObject:
   - component: {fileID: 889996503095906035}
   - component: {fileID: 2415085602448172563}
   - component: {fileID: 3263811764184336789}
+  - component: {fileID: 8022970820745580909}
+  - component: {fileID: 1664545667510170468}
   m_Layer: 7
   m_Name: Unit
   m_TagString: Untagged
@@ -156,6 +158,33 @@ MonoBehaviour:
   animator: {fileID: 7041673553097951970}
   bulletProjectilePrefab: {fileID: 5143953107677581287, guid: a6900d50c37a4974db0351af8e5ae189, type: 3}
   shootBulletTransform: {fileID: 1673788051069191582}
+--- !u!114 &8022970820745580909
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8336636059701112980}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b6c55f8ef6c125488a4de80fd058479, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 10
+--- !u!114 &1664545667510170468
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8336636059701112980}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 04cd63dcb7ecd534bab8248bac65cb88, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ragdollPrefab: {fileID: 5467303931438132233, guid: f8e5186fec0b9c44587bac18cd770b73, type: 3}
+  originalRootBone: {fileID: 6988713372299968480}
 --- !u!1 &8615251205580699950
 GameObject:
   m_ObjectHideFlags: 0
@@ -660,6 +689,11 @@ PrefabInstance:
 --- !u!4 &6981582509592644784 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4170833147357194, guid: 2f3e27eecb190e44a9af50723c394274, type: 3}
+  m_PrefabInstance: {fileID: 6984310154136380602}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &6988713372299968480 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4966341056781146, guid: 2f3e27eecb190e44a9af50723c394274, type: 3}
   m_PrefabInstance: {fileID: 6984310154136380602}
   m_PrefabAsset: {fileID: 0}
 --- !u!4 &6988750143564114938 stripped

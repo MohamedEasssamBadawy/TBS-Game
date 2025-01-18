@@ -8,6 +8,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1664545667510170468, guid: 9fb9d34df35d8ce4090a47f6f35e2010, type: 3}
+      propertyPath: ragdollPrefab
+      value: 
+      objectReference: {fileID: 5981736050423537376, guid: 82999375d4f6f8f4ca1a542a69aad1eb, type: 3}
     - target: {fileID: 5467303931438132233, guid: 9fb9d34df35d8ce4090a47f6f35e2010, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
