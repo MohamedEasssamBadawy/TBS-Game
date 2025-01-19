@@ -76,6 +76,7 @@
     <Compile Include="Assets\Scripts\MouseWorld.cs" />
     <Compile Include="Assets\Scripts\Grid\SpinAction.cs" />
     <Compile Include="Assets\Scripts\Action\UnitActionSystem.cs" />
+    <Compile Include="Assets\Scripts\UI\UnitWorldUI.cs" />
     <Compile Include="Assets\TutorialInfo\Scripts\Readme.cs" />
     <Compile Include="Assets\Scripts\Grid\GridSystemVisual.cs" />
     <Compile Include="Assets\Scripts\TurnSystem.cs" />
@@ -85,6 +86,7 @@
     <Compile Include="Assets\Scripts\UI\ActionBuzyUI.cs" />
     <Compile Include="Assets\Scripts\UI\TurnSystemUI.cs" />
     <Compile Include="Assets\Scripts\UnitRagdollSpawner.cs" />
+    <Compile Include="Assets\Scripts\LookAtCamera.cs" />
     <Compile Include="Assets\Scripts\UI\UnitActionSystemUI.cs" />
     <Compile Include="Assets\Scripts\Testing.cs" />
     <Compile Include="Assets\Scripts\Grid\GridPosition.cs" />
