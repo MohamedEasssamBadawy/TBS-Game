@@ -6,7 +6,9 @@ public class Unit : MonoBehaviour
 
     private const int ACTION_POINTS_MAX = 2;
 
-    public static EventHandler OnAnyActionPointsChanged;
+    public static event EventHandler OnAnyActionPointsChanged;
+    public static event EventHandler OnAnyUnitSpawned;
+    public static event EventHandler OnAnyUnitDead;
 
     [SerializeField] private bool isEnemy;
 
@@ -31,6 +33,8 @@ public class Unit : MonoBehaviour
         TurnSystem.Instance.OnTurnChanged += TurnSystem_OnTurnChanged;
 
         healthSystem.OnDead += HealthSystem_OnDead;
+
+        OnAnyUnitSpawned?.Invoke(this, EventArgs.Empty);
     }
 
     private void OnDisable() {
@@ -39,19 +43,16 @@ public class Unit : MonoBehaviour
         healthSystem.OnDead -= HealthSystem_OnDead;
     }
 
-    private void HealthSystem_OnDead(object sender, EventArgs e) {
-        LevelGrid.Instance.RemoveUnitAtGridPosition(gridPosition, this);
-        Destroy(gameObject);
-    }
-
     private void Update() {
 
       
         GridPosition newGridPosition = LevelGrid.Instance.GetGridPosition(transform.position);
         if(newGridPosition != gridPosition) {
             // Unit Changed Grid position...
-            LevelGrid.Instance.UnitMovedGridPosition(this, gridPosition, newGridPosition);
+            GridPosition oldGridPosition = gridPosition;
             gridPosition = newGridPosition;
+
+            LevelGrid.Instance.UnitMovedGridPosition(this, oldGridPosition, newGridPosition);
         }
     }
 
@@ -116,4 +117,12 @@ public class Unit : MonoBehaviour
     public void Damage(int damageAmount) {
         healthSystem.Damage(damageAmount);
     }
+
+    private void HealthSystem_OnDead(object sender, EventArgs e) {
+        LevelGrid.Instance.RemoveUnitAtGridPosition(gridPosition, this);
+        Destroy(gameObject);
+
+        OnAnyUnitDead?.Invoke(this, EventArgs.Empty);
+    }
+
 }

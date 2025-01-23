@@ -63,6 +63,7 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\HealthSystem.cs" />
     <Compile Include="Assets\Scripts\UI\EnemyAI.cs" />
+    <Compile Include="Assets\Scripts\UnitManager.cs" />
     <Compile Include="Assets\Scripts\Unit.cs" />
     <Compile Include="Assets\Scripts\Action\ShootAction.cs" />
     <Compile Include="Assets\Scripts\UnitSelectedVisual.cs" />
