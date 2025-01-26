@@ -88,6 +88,7 @@
     <Compile Include="Assets\Scripts\UI\TurnSystemUI.cs" />
     <Compile Include="Assets\Scripts\UnitRagdollSpawner.cs" />
     <Compile Include="Assets\Scripts\LookAtCamera.cs" />
+    <Compile Include="Assets\Scripts\EnemyAIAction.cs" />
     <Compile Include="Assets\Scripts\UI\UnitActionSystemUI.cs" />
     <Compile Include="Assets\Scripts\Testing.cs" />
     <Compile Include="Assets\Scripts\CameraManager.cs" />
