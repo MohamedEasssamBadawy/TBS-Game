@@ -63,6 +63,7 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\HealthSystem.cs" />
     <Compile Include="Assets\Scripts\UI\EnemyAI.cs" />
+    <Compile Include="Assets\Scripts\GrenadeProjectile.cs" />
     <Compile Include="Assets\Scripts\UnitManager.cs" />
     <Compile Include="Assets\Scripts\Unit.cs" />
     <Compile Include="Assets\Scripts\Action\ShootAction.cs" />
@@ -92,6 +93,7 @@
     <Compile Include="Assets\Scripts\PathfindingGridDebugObject.cs" />
     <Compile Include="Assets\Scripts\UI\TurnSystemUI.cs" />
     <Compile Include="Assets\Scripts\UnitRagdollSpawner.cs" />
+    <Compile Include="Assets\Scripts\Action\GrenadeAction.cs" />
     <Compile Include="Assets\Scripts\LookAtCamera.cs" />
     <Compile Include="Assets\Scripts\EnemyAIAction.cs" />
     <Compile Include="Assets\Scripts\UI\UnitActionSystemUI.cs" />
