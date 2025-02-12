@@ -439,6 +439,8 @@ MonoBehaviour:
     material: {fileID: 2100000, guid: 0c89e4d3aaafbd24d8108118ab2ef5d3, type: 2}
   - gridVisualType: 2
     material: {fileID: 2100000, guid: 71ac9b7f749d17f42bc1be4ce41f6fe4, type: 2}
+  - gridVisualType: 4
+    material: {fileID: 2100000, guid: c8effd59332ec114db575f9128cddd5c, type: 2}
   - gridVisualType: 3
     material: {fileID: 2100000, guid: 3d174a3ad8d6b8a4db8f7dd6b74143ce, type: 2}
 --- !u!4 &248541955
