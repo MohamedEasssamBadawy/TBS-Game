@@ -73,6 +73,7 @@
     <Compile Include="Assets\Scripts\Grid\GridSystemVisualSingle.cs" />
     <Compile Include="Assets\Scripts\Grid\GridDebugObject.cs" />
     <Compile Include="Assets\Scripts\DestructibleCrate.cs" />
+    <Compile Include="Assets\Scripts\InputManager.cs" />
     <Compile Include="Assets\Scripts\Grid\GridSystem.cs" />
     <Compile Include="Assets\Scripts\Grid\GridObject.cs" />
     <Compile Include="Assets\Scripts\ScreenShake.cs" />
@@ -80,6 +81,7 @@
     <Compile Include="Assets\Scripts\PathNode.cs" />
     <Compile Include="Assets\Scripts\ScreenShakeActions.cs" />
     <Compile Include="Assets\Scripts\MouseWorld.cs" />
+    <Compile Include="Assets\Scripts\IInteractable.cs" />
     <Compile Include="Assets\Scripts\Grid\SpinAction.cs" />
     <Compile Include="Assets\Scripts\Action\UnitActionSystem.cs" />
     <Compile Include="Assets\Scripts\UI\UnitWorldUI.cs" />
@@ -91,6 +93,7 @@
     <Compile Include="Assets\Scripts\PathFinding.cs" />
     <Compile Include="Assets\Scripts\Action\MoveAction.cs" />
     <Compile Include="Assets\Scripts\UI\ActionBuzyUI.cs" />
+    <Compile Include="Assets\Scripts\InteractSphere.cs" />
     <Compile Include="Assets\Scripts\PathfindingGridDebugObject.cs" />
     <Compile Include="Assets\Scripts\UI\TurnSystemUI.cs" />
     <Compile Include="Assets\Scripts\UnitRagdollSpawner.cs" />
@@ -99,11 +102,13 @@
     <Compile Include="Assets\Scripts\PathfindingUpdater.cs" />
     <Compile Include="Assets\Scripts\EnemyAIAction.cs" />
     <Compile Include="Assets\Scripts\UI\UnitActionSystemUI.cs" />
+    <Compile Include="Assets\Scripts\Door.cs" />
     <Compile Include="Assets\Scripts\Testing.cs" />
     <Compile Include="Assets\Scripts\CameraManager.cs" />
     <Compile Include="Assets\Scripts\Grid\GridPosition.cs" />
     <Compile Include="Assets\Scripts\CameraController.cs" />
     <Compile Include="Assets\Scripts\Action\SwordAction.cs" />
+    <Compile Include="Assets\Scripts\Action\InteractAction.cs" />
     <Compile Include="Assets\Scripts\Grid\LevelGrid.cs" />
   </ItemGroup>
   <ItemGroup>
