@@ -88,7 +88,6 @@
     <Compile Include="Assets\TutorialInfo\Scripts\Readme.cs" />
     <Compile Include="Assets\Scripts\Grid\GridSystemVisual.cs" />
     <Compile Include="Assets\Scripts\TurnSystem.cs" />
-    <Compile Include="Assets\PlayerInputActions.cs" />
     <Compile Include="Assets\Scripts\Action\BaseAction.cs" />
     <Compile Include="Assets\Scripts\UnitRagdoll.cs" />
     <Compile Include="Assets\Scripts\PathFinding.cs" />
