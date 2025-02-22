@@ -101,6 +101,7 @@
     <Compile Include="Assets\Scripts\Action\GrenadeAction.cs" />
     <Compile Include="Assets\Scripts\LookAtCamera.cs" />
     <Compile Include="Assets\Scripts\PathfindingUpdater.cs" />
+    <Compile Include="Assets\Scripts\LevelScripting.cs" />
     <Compile Include="Assets\Scripts\EnemyAIAction.cs" />
     <Compile Include="Assets\Scripts\UI\UnitActionSystemUI.cs" />
     <Compile Include="Assets\Scripts\Door.cs" />

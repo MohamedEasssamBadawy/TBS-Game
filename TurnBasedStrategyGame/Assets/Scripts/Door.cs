@@ -1,8 +1,12 @@
 using System;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class Door : MonoBehaviour, IInteractable
 {
+
+    public event EventHandler OnDoorOpened;
+    public event EventHandler OnDoor;
 
     [SerializeField] private bool isOpen;
 
@@ -58,6 +62,9 @@ public class Door : MonoBehaviour, IInteractable
         isOpen = true;
         animator.SetBool("IsOpen", isOpen);
         PathFinding.Instance.SetIsWalkableGridPosition(gridPosition, true);
+
+        OnDoor?.Invoke(this, EventArgs.Empty);
+        OnDoorOpened?.Invoke(this, EventArgs.Empty);
     }
 
     private void CloseDoor() {
